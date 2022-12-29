@@ -23,19 +23,25 @@
             <p>Texto ejemplo</p>
             <p>Texto ejemplo</p>
             <img src="bootstrap.png" alt="..." style="height: 10%;width: 10%;"><br><br>
-            <a href="principal.html" class="btn btn-primary btn-sm">
+            <a href="principal.html" class="btn btn-primary" style="float: left;">
                 ←Volver
             </a>
-            <select class="btn btn-primary" style="padding: 5px;">
-                <option value="value1">Guardar favorito</option>
-                <option value="value2">Exportar a PDF</option>
-                <option value="value3">Imprimir</option>
-                <option value="value4">Compartir</option>
-            </select>
+            <div class="dropdown" style="float: right;">
+                <button class="btn btn-primary dropdown-toggle"
+                    type="button" data-bs-toggle="dropdown">
+                    Acciones
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Guardar favorito</a>
+                    <a class="dropdown-item" href="#">Exportar a PDF</a>
+                    <a class="dropdown-item" href="#">Imprimir</a>
+                    <a class="dropdown-item" href="#">Compartir</a>
+                </div>
+            </div>
               
         </div>
 
-        <footer style="background-color: gray; text-align: center; color: white;">
+        <footer style="background-color: gray; text-align: center; color: white; margin-top: 50px;">
             Pie de página
         </footer>
 
